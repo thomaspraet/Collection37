@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Collection.Web.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Collection.Web.Data
@@ -9,5 +10,6 @@ namespace Collection.Web.Data
             : base(options)
         {
         }
+        public DbSet<Artwork> Artworks { get; set; }
     }
 }
